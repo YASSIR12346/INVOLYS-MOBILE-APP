@@ -123,7 +123,7 @@ class RemindAlertDialog {
                           child: Text(AppLocalizations.of(context)!.markAsRead,
                               style: TextStyle(fontSize: 16)),
                           style: ElevatedButton.styleFrom(
-                            fixedSize: Size(120, 40),
+                            fixedSize: Size(126, 40),
                             foregroundColor:
                                 generatedAlert.alert.priorityLevel == 3
                                     ? Colors.red
