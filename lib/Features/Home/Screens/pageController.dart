@@ -176,13 +176,14 @@ class _HomeState extends State<Home> with WidgetsBindingObserver {
           },
         );
       }),
-      body: getSelectedWidget(),
+      
+      body:Consumer<AppProvider>(builder: (context, appProvider, child) { return getSelectedWidget(appProvider); })
     );
   }
 
-  Widget getSelectedWidget() {
+  Widget getSelectedWidget(appProvider) {
     Widget widget;
-    switch (Provider.of<AppProvider>(context, listen: false).indexB) {
+    switch (appProvider.indexB) {
       case 0:
         widget = HomePage();
         break;
