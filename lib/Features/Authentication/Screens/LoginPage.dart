@@ -92,13 +92,13 @@ class _LoginPageState extends State<LoginPage> {
                         keyboardType: TextInputType.emailAddress,
                         controller: emailController,
                         decoration: InputDecoration(
-                          labelText: "E-mail",
+                          labelText: "Login",
                           border: OutlineInputBorder(),
                           prefixIcon: Icon(Icons.email),
                         ),
                         validator: (value) {
                           if (value=="") {
-                            return "Enter Email";
+                            return "Enter Login";
                           } 
                         },
                       ),
